@@ -18,7 +18,7 @@
         <div class="container">
             <input type="checkbox" id="menu" class="container__botao">
             <label for="menu">
-                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+                <span class="cabeçalho_menu-hamburguer container_imagem"></span>
             </label>
             <ul class="lista-menu">
                 <li class="lista-menu__titulo">Categorias</li>
@@ -63,7 +63,6 @@
                 <div class="swiper-slide"><img src="img/Javascript.png"></div>
                 <div class="swiper-slide"><img src="img/Guia Front-end.png"></div>
                 <div class="swiper-slide"><img src="img/Portugol.png"></div>
-                <div class="swiper-slide"><img src="img/Acessibilidade.svg"></div>
                 ...
             </div>
         
@@ -85,16 +84,32 @@
                 <!-- 2º coluna -->
                 <img src="img/Angular.png" class="descrição__imagem">
             </div>
-
+            <!-- 2º linha -->
             <div class="card__botões">
+                <!--1º coluna-->
                 <ul class="botões">
-                    <li class="botões__item"><img src="img/favoritos.svg"></li>
-                    <li class="botões__item"><img src="img/compras.svg"></li>
+                    <li class="botões__item>"><img src="img/Favoritos.svg"></li>
+                    <li class="botões__item"><img src="img/Compras.svg"></li>
                 </ul>
-                
+                <!--2º coluna -->
                 <a href="#" class="botões__ancora">Saiba mais</a>
             </div>
-        </div>
-    </section>        
+        </div> 
+    </section>
 
-   
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+              spaceBetween: 10,
+              slidesPerView: 3,
+              pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                },
+        });
+    </script>
+
+</body>
+
+</html>
